@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+
+    <style>
+        
+        div{
+            border: 1px solid black;
+        }
+
+        img{
+            margin: 10px;
+        }
+
+        .container{
+            position: relative;
+            height: 8000px;
+            background-color: yellow;
+        }
+
+        .image2{
+            /* position: relative;             /* in relative no one can occupy empty space of element */
+            /*top: 100px;
+            left: 100px; */
+
+            position: absolute;                 /* In absolute empty space can be occupied by other elements */ 
+            top: 100px;
+        }
+        
+        .image4{
+            position: fixed;
+        }
+
+        .image3{
+            position: sticky;
+            top:500px;
+        }
+        
+        .box{
+            background-color: aquamarine;
+            height: 5000px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <img src="box1_image.jpg" 
+        alt="image1"
+        width:="150px"
+        height="120px"
+        class="image1"
+        > 
+        
+        <img src="box2_image.jpg" 
+        alt="image2"
+        width:="150px"
+        height="150px"
+        class="image2"
+        >
+        
+        <img src="box7_image.jpg" 
+        alt="image3"
+        width:="150px"
+        height="150px"
+        class="image3"
+        >
+        
+        <img src="box8_image.jpg" 
+        alt="image4"
+        width:="150px"
+        height="150px"
+        class="image4"
+        > 
+
+        
+    </div>
+
+    <div class="box">
+
+
+    </div>
+
+
+    
+</body>
+</html>

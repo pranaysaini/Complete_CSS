@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+
+    <style>
+
+        .container{
+            background-color: beige;
+            height: 800px;
+            border: 2px solid black;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box{
+            background-color: aquamarine;
+            width: 500px;
+            height: 500px;
+            border: 1px solid brown;
+            margin: 10px;
+            padding: 10px;
+        
+            --primaryColor: red;
+        
+            box-shadow: 10px 15px 5px 10px var(--primaryColor);    /* x, y, blur, spread, color */
+        }
+        
+        #head1{
+            text-shadow: 12px 13px 1px yellow;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <img src="bhagat.jpg">
+            <h2 id="head1">Welcome To Website</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem eaque nisi sed aut. Natus neque omnis, perferendis iusto esse corrupti veniam molestias quos temporibus alias quam consectetur repellendus nihil harum explicabo minima. At ea officia assumenda aut dolorum? Illo eius temporibus repudiandae mollitia veniam. Ex esse quo voluptatum unde.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
