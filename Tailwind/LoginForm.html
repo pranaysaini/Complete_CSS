@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+
+    <div class="flex h-screen">
+        <img class="hidden lg:block w-1/2" src="New Image.jpeg" alt="Meri Image">
+        
+        <div class="flex flex-col justify-center items-center w-full">
+            <div>
+                <div class="text-3xl text-center font-bold lg:text-left">
+                    <span class="text-green-600">&#9650</span>
+                    <span>FarmMan</span>
+                </div>
+
+                <div class="text-3xl text-center font-bold lg:text-left">
+                    <h2>Hello,</h2>
+                    <h2>Welcome Back</h2>
+                </div>
+
+                <!-- Form -->
+                <form action="" class="mt-8 w-[80%] lg:w-96 mx-auto space-y-4">
+                    <h4>Login to Manage Your Account</h4>
+                    
+                    <input 
+                    class="border w-full px-4 py-2"
+                    type="e-mail" placeholder="E-Mail">
+
+                    <input 
+                    class="border w-full px-4 py-2"
+                    type="password" placeholder="Password">
+
+                    <div class="text-blue-600 cursor-pointer hover:text-blue-400">Forgot your Password ?</div>
+
+                    <button class="w-full bg-green-800 px-10 py-2 text-white rounded hover:bg-green-500">Login</button>
+
+                </form>
+
+                <div class="text-center space-y-4 mt-4 ">
+                    <span>OR</span>
+                    <div class="flex justify-center items-center gap-8">
+                        <i class="fa-brands fa-facebook text-2xl cursor-pointer"></i>
+                        <i class="fa-brands fa-google text-2xl cursor-pointer"></i>
+                        <i class="fa-brands fa-instagram text-2xl cursor-pointer"></i>
+                    </div>
+                </div>
+
+                <div
+                class="mt-4 text-sm text-center">Don't Have Account? <span class="text-blue-800 cursor-pointer hover:text-blue-400">Sign Up</span></div>
+
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
